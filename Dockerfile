@@ -5,7 +5,7 @@ USER 0
 RUN chgrp -R 0 /harbor/ && \
     chmod -R g=u /harbor/
 
-RUN chgrp -R 0 / && \
-    chmod -R g=u /
+RUN chgrp -R 0 /etc && \
+    chmod -R g=u /etc
 
 USER harbor
