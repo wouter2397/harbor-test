@@ -1,4 +1,4 @@
-FROM docker.io/goharbor/harbor-core:dev
+FROM docker.io/goharbor/redis-photon:dev
 
 USER 0
 
