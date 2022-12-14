@@ -8,4 +8,4 @@ RUN chgrp -R 0 /harbor/ && \
 RUN chgrp -R 0 /etc/pki/tls/certs/ && \
     chmod -R g=u /etc/pki/tls/certs/
 
-USER harbor
+USER nginx
