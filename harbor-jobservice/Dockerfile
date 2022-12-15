@@ -7,5 +7,8 @@ RUN chgrp -R 0 /harbor/ && \
 
 RUN chgrp -R 0 /etc/pki/tls/certs/ && \
     chmod -R g=u /etc/pki/tls/certs/
+    
+RUN chgrp -R 0 /etc/harbor/ssl && \
+    chmod -R g=u /etc/harbor/ssl
 
 USER harbor
